@@ -21,13 +21,13 @@ import butterknife.OnClick;
 public class MainActivity extends AppCompatActivity {
 
     // sectors of our wheel (look at the image to see the sectors)
-    private static final String[] sectors = { "32. Er det ingen på tapp, men vi kan anbefale Bourbon & Rye Barrel Aged PECANISHER", "15. Field Trip",
-            "19. Hytta", "4. Cocobänger ", "21. Schous Pils", "2. Er det ingen på tapp, men vi kan anbefale Tønnelagra 001", "25. Juicy Liu (2021)", "17 Rhubarb Foudre Saison", "34. Er det ingen på tapp, men vi anbefaler Kveika Rugøl",
-            "6. ERLING Hazy Pale Ale", "27. Oslove","13. Fantom", "36. Er det ingen på tapp, men vi kan anbefale MELON HUSK - WATERMELON SUGAR SOUR", "11. Guinness Draught (Nitro)", "30. Er det ingen på tapp, men vi kan anbefale Bacchus Frambozenbier", "8. Wormhole 2.0 ",
-            "23. Lorpan IPA", "10. Sauna", "5. Darkwing", "24. Simcoe Maverick", "16. Fast Pace - DEFCON 2", "33. Er det ingen på tapp, men vi kan anbefale Ayinger Urweisse",
-            "1. BFF Blueberry Fluff Forever Gose Brewski X Omnipollo", "20. Frydenlund Bayer", "14. Hopshake", "31. Er det ingen på tapp, men vi kan anbefale Fløien IPA", "9. SURE-GYDA Trippelfruktet Tranebær/Granateple Surøl", "22. Brooklyn Lager",
-            "18. 1664 Blanc", "29. Er det ingen på tapp, men vi kan anbefale Syndefloden", "7. Slam Dunk", "28. The Very Best of Canny Rogers", "12. Fosskodde 3.0", "35. Frydenlund pilsner",
-            "3. Noa Pecan Mud Cake Stout", "26. Dead Cat Double IPA", "0. Du ville ikke ha øl du?"
+    private static final String[] sectors = { "32. Er det ingen på tapp, men vi kan anbefale Bourbon & Rye Barrel Aged PECANISHER", "15. Mulm & Mørke",
+            "19. Kittens, Puppies & Hops ", "4. Tussvatnet (2021)", "21. Er det ingen på tapp, men vi kan anbefale Syndefloden", "2. Er det ingen på tapp, men vi kan anbefale Tønnelagra 001", "25. Er det ingen på tapp, men vi kan anbefale Bacchus Frambozenbier", "17. Shake Out", "34. Plaguewing",
+            "6. Norwegian Blonde", "27. Er det ingen på tapp, men vi kan anbefale Bacchus Frambozenbier","13. Lords of Acid", "36. Er det ingen på tapp, men vi kan anbefale MELON HUSK - WATERMELON SUGAR SOUR", "11. Guinness Draught (Nitro)", "30. Er det ingen på tapp, men vi kan anbefale Bacchus Frambozenbier", "8. Without A Word",
+            "23. Grimecreep", "10. Er det ingen på tapp, men vi kan anbefale Syndefloden", "5. Timeless", "24. Glögg Sour", "16. Holiday Amarillo", "33. Earth Past",
+            "1. Underkastelse", "20. Frydenlund Bayer", "14. Triple Idaho", "31. Hans Gruber - Yippee Ki Yay", "9. Export Stout London 1890", "22. Brooklyn Lager",
+            "18. 1664 Blanc", "29. Black And Blue", "7. Julejuice (2021)", "28. Twolips", "12. Six O'Clock Hold", "35. Frydenlund pilsner",
+            "3. Squeegee", "26. Peachy Ape", "0. Du ville ikke ha øl du?"
     };
     @BindView(R.id.spinBtn)
     Button spinBtn;
@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
     TextView resultTv;
     @BindView(R.id.wheel)
     ImageView wheel;
-    // We create a Random instance to make our wheel spin randomly
+    // create a Random instance to make our wheel spin randomly
     private static final Random RANDOM = new Random();
     private int degree = 0, degreeOld = 0;
-    // We have 37 sectors on the wheel, we divide 360 by this value to have angle for each sector
-    // we divide by 2 to have a half sector
+    // 37 sectors on the wheel, divide 360 by this value to have angle for each sector
+    // divide by 2 to have a half sector
     private static final float HALF_SECTOR = 360f / 37f / 2f;
 
     @Override
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.spinBtn)
     public void spin(View v) {
         degreeOld = degree % 360;
-        // we calculate random angle for rotation of our wheel
+        // calculate random angle for rotation of our wheel
         degree = RANDOM.nextInt(360) + 720;
         // rotation effect on the center of the wheel
         RotateAnimation rotateAnim = new RotateAnimation(degreeOld, degree,
@@ -65,13 +65,13 @@ public class MainActivity extends AppCompatActivity {
         rotateAnim.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
-                // we empty the result text view when the animation start
+                // empty the result text view when the animation start
                 resultTv.setText("");
             }
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                // we display the correct sector pointed by the triangle at the end of the rotate animation
+                // display the correct sector pointed by the triangle at the end of the rotate animation
                 resultTv.setText(getSector(360 - (degree % 360)));
             }
 
