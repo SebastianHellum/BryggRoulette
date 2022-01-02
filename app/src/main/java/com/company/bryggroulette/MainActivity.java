@@ -81,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // we start the animation
         wheel.startAnimation(rotateAnim);
     }
     private String getSector(int degrees) {
@@ -100,10 +99,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
             i++;
-            // now we can test our Android Roulette Game :)
-            // That's all !
-            // In the second part, you will learn how to add some bets on the table to play to the Roulette Game :)
-            // Subscribe and stay tuned !
 
         } while (text == null  &&  i < sectors.length);
 
