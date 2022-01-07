@@ -14,4 +14,4 @@ Unfortunately only available for Android at this point.
 * [X] You get thirsty 🍻
 
 
-![Gif](video/spin.gif) 
+![Gif](gif/spinning.gif) 
