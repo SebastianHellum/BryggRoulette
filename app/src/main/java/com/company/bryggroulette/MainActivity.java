@@ -21,12 +21,12 @@ import butterknife.OnClick;
 public class MainActivity extends AppCompatActivity {
 
     // sectors of our wheel (look at the image to see the sectors)
-    private static final String[] sectors = { "32. Er det ingen på tapp, men vi kan anbefale Bourbon & Rye Barrel Aged PECANISHER", "15. Mulm & Mørke",
-            "19. Kittens, Puppies & Hops ", "4. Tussvatnet (2021)", "21. Er det ingen på tapp, men vi kan anbefale Syndefloden", "2. Er det ingen på tapp, men vi kan anbefale Tønnelagra 001", "25. Er det ingen på tapp, men vi kan anbefale Bacchus Frambozenbier", "17. Shake Out", "34. Plaguewing",
-            "6. Norwegian Blonde", "27. Er det ingen på tapp, men vi kan anbefale Bacchus Frambozenbier","13. Lords of Acid", "36. Er det ingen på tapp, men vi kan anbefale MELON HUSK - WATERMELON SUGAR SOUR", "11. Guinness Draught (Nitro)", "30. Er det ingen på tapp, men vi kan anbefale Bacchus Frambozenbier", "8. Without A Word",
-            "23. Grimecreep", "10. Er det ingen på tapp, men vi kan anbefale Syndefloden", "5. Timeless", "24. Glögg Sour", "16. Holiday Amarillo", "33. Earth Past",
-            "1. Underkastelse", "20. Frydenlund Bayer", "14. Triple Idaho", "31. Hans Gruber - Yippee Ki Yay", "9. Export Stout London 1890", "22. Brooklyn Lager",
-            "18. 1664 Blanc", "29. Black And Blue", "7. Julejuice (2021)", "28. Twolips", "12. Six O'Clock Hold", "35. Frydenlund pilsner",
+    private static final String[] sectors = { "32. Tikitukan", "15. SHAUN OF THE DEATH",
+            "19. Kittens, Puppies & Hops ", "4. Sasion larsen", "21. Er det ingen på tapp, men vi kan anbefale Syndefloden", "2. Er det ingen på tapp, men vi kan anbefale Tønnelagra 001", "25. Here In the Morning", "17. SOUP SHOWERS", "34. Plaguewing",
+            "6. Norwegian Blonde", "27. In Bloom","13. STEADY ROLLING TRIANGLES", "36. Er det ingen på tapp, men vi kan anbefale MELON HUSK - WATERMELON SUGAR SOUR", "11. Guinness Draught (Nitro)", "30. Tropic Thunder", "8. Without A Word",
+            "23. Grimecreep", "10. Baltic Porter Day 2022", "5. Pils Brosnan", "24. Glögg Sour", "16. Patrons Project 13.01", "33. Earth Past",
+            "1. Underkastelse", "20. Frydenlund Bayer", "14. The Great Stavanger Oreo Crisis", "31. Hans Gruber - Yippee Ki Yay", "9. Sour Cherry - FARMER's RESERVE", "22. Brooklyn Lager",
+            "18. 1664 Blanc", "29. Black And Blue", "7. North X Bundobust Salted Lime Sour", "28. Twolips", "12. Shitter was Full", "35. Frydenlund pilsner",
             "3. Squeegee", "26. Peachy Ape", "0. Du ville ikke ha øl du?"
     };
     @BindView(R.id.spinBtn)
