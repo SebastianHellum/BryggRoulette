@@ -5,7 +5,7 @@ Therefore is the BryggRoulette created to solve all your choosing problems.
 
 #### Get to the point 💻
 Download the APK on the right side on the front page, under `releases`.\
-or click <a href="https://github.com/SebastianHellum/BryggRoulette/releases/tag/v.0.0.1-aplha">here</a>.\
+or click <a href="https://github.com/SebastianHellum/BryggRoulette/releases/tag/v.0.0.4-alpha">here</a>.\
 Unfortunately only available for Android at this point.  
 
 #### Functionality 🤖
